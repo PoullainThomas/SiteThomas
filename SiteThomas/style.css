@@ -1,8 +1,4 @@
 /* ---------- HEADER --------- */
-body{
-    margin: 0;
-    padding: 0;
-}
 .menu h3{
     background-color:#AC99BF;
     float: left;
@@ -47,20 +43,20 @@ label, #toggle
 {
     display: none;
 }
-
-header img{
+body{
+    background-image: url(./photo/IMG_6216_Original.JPG); 
+    background-position: center center;
+    background-repeat: no-repeat;
     width: 100vw;
-    height: 100vh;
-    position: relative;
     z-index: 1;
-    display: flex;
-  }
+    
+}
   header .photo p{
     position: absolute;
     z-index: 2;
     text-align: center;
     top:45%;
-    left: 20%;
+    left: 30%;
     font-size: 30px;
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -75,28 +71,24 @@ header img{
 {
     header .menu{
         display: inline-block;
-        width: 100%;
     }
-    header .menu img{
-        float: left;
+    header .menu a{
         position: relative;
-        width: 100px;
-        margin-left: 10%;
+        margin: 0px;
     }
     header .onglet
     {
-        height: 10%;
-        width: 15%;
         position: relative;
-        margin-top: 8%;
-        margin-right: 10%;
+        float: right;
     }
  
     header .onglet .main_pages 
     {
         display: none;
         flex-direction: column;
-        height: 220px;
+        height: 80vh;
+        width: 100vw;
+        background-color: azure;
     }
  
     header .onglet .main_pages a {
@@ -104,7 +96,7 @@ header img{
         color: black;
     }
  
-    label 
+    .trois
     {
         width: 30px;
         display: flex;
@@ -115,7 +107,9 @@ header img{
         color: black;
         cursor: pointer;
     }
- 
+    .image{
+        width: 100vh;
+    }
     #toggle:checked + .main_pages {
         display: flex;
     }
