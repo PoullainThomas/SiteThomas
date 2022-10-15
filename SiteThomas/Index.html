@@ -4,19 +4,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="site_thomas.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
   <title>Thomas Poullain</title>
 </head>
 <body>
   <header>
-    <ul>
-      <li><a href="site_thomas.html"><h3>THOMAS POULLAIN</h3></a></li>
-      <li><a href="les_photos.html">PHOTO</a></li>
-      <li><a href="video.html">VIDEO</a></li>
-      <li><a href="#">CONTACT</a></li>
-    </ul>
+    <div class="menu">
+        <a href="site_thomas.html"><h3>THOMAS POULLAIN</h3></a>
+        <div class="onglet">
+            <label for="toggle">☰</label>
+            <input type="checkbox" id="toggle">
+            <div class="main_pages">
+                <a href="les_photos.html">PHOTO</a>
+                <a href="video.html">VIDEO</a>
+                <a class="contact" href="#">CONCTACT</a>
+            </div>
+        </div>
+    </div>
+    
 <div class="photo">
   <img src="./photo/IMG_6216_Original.JPG" alt="#">
+  <img src="./photo/DSCF1162.JPG" alt="">
   <p><a href="cv.html">THOMAS POULLAIN</a> <br></br>Site internet dédié au travail de Thomas</p>
 </div>    
   <footer>
