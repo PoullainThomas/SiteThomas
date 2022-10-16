@@ -1,8 +1,8 @@
 /* ---------- HEADER --------- */
 .menu h3{
-    background-color:#AC99BF;
     float: left;
     margin-left: 15%;
+    color: rgb(255, 255, 255);
 }
 .menu{
     margin-left: 10%;
@@ -15,10 +15,10 @@
     float: right;
     margin-top: 1%;
     width: 50%;
-    background-color: aqua;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: rgb(255, 255, 255);
 }
 .onglet .main_pages a 
 {
@@ -28,26 +28,24 @@
     justify-content: center;
     height: 40px;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .onglet .main_pages .contact{
-    background-color: #AC99BF;
-    border-radius: 12px;
     color: white;
 }
-.onglet a:hover 
-{
-    color: #AC99BF;
-}
+
 label, #toggle
 {
     display: none;
 }
 body{
+    margin: 0px;
     background-image: url(./photo/IMG_6216_Original.JPG); 
     background-position: center center;
-    background-repeat: no-repeat;
+    background-size: cover;
     width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
     z-index: 1;
     
 }
@@ -55,8 +53,8 @@ body{
     position: absolute;
     z-index: 2;
     text-align: center;
-    top:45%;
-    left: 30%;
+    top:40%;
+    left: 33%;
     font-size: 30px;
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -71,6 +69,7 @@ body{
 {
     header .menu{
         display: inline-block;
+        
     }
     header .menu a{
         position: relative;
@@ -78,10 +77,14 @@ body{
     }
     header .onglet
     {
-        position: relative;
         float: right;
+        z-index: 4;
     }
- 
+    header .trois {
+        display: flex;
+        float: right;
+        margin-top: 20px;
+    }
     header .onglet .main_pages 
     {
         display: none;
@@ -89,6 +92,8 @@ body{
         height: 80vh;
         width: 100vw;
         background-color: azure;
+        z-index: 4;
+        margin-top: 0px;
     }
  
     header .onglet .main_pages a {
@@ -96,20 +101,32 @@ body{
         color: black;
     }
  
-    .trois
-    {
-        width: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        font-size: 40px;
-        color: black;
-        cursor: pointer;
+    body .photos{
+        margin: 0px;
+        background-image: url(./photo/DSCF1162.JPG); 
+        background-position: center center;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        z-index: 1;
     }
-    .image{
-        width: 100vh;
-    }
+    header .photo p{
+        position: absolute;
+        z-index: 2;
+        text-align: center;
+        top:30%;
+        left: 3%;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-family: Bradley Hand, cursive;
+      }
+      header .photo a{
+        text-decoration: none;
+        color: white;
+        font-family: Georgia, serif;
+      }
     #toggle:checked + .main_pages {
         display: flex;
     }
